@@ -12,6 +12,7 @@
     "cordis",
     "compaction",
     "context",
+    "context-compression",
     "ui"
   ],
   "main": "lib/index.js",
@@ -39,10 +40,5 @@
     "client": {
       "platform": "web"
     }
-  }
-}
-"dsh": {
-  "bundle": {
-    "patch": "./cordis.patch.yml"
   }
 }
