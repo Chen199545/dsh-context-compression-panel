@@ -1,0 +1,12 @@
+# dsh-context-compression-panel
+#
+# Host half is intentionally empty: this plugin is pure browser UI. The `insert`
+# row below is what makes the composition load `./client` (declared through
+# package.json's `dsh.client`) into the web app.
+#
+# The row id is also the plugin's identity in the composition; it must not
+# collide with another entry, and the id below is what a profile reads when it
+# disables the panel.
+- insert:
+    - id: context-compression-panel
+      name: 'dsh-context-compression-panel'

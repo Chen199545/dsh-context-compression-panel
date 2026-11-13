@@ -1,0 +1,43 @@
+{
+  "name": "dsh-context-compression-panel",
+  "version": "3.0.0",
+  "description": "Context-compression control panel for the DeepSeek Harness composer: two exact percentage fields (when to compress, how much to keep verbatim) plus an auto-compression switch, applied live through the plugin Loader and replayed at boot.",
+  "type": "module",
+  "license": "MIT",
+  "author": "雨桐",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "compaction",
+    "context",
+    "ui"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "install.ps1",
+    "uninstall.ps1",
+    "test",
+    "tools"
+  ],
+  "scripts": {
+    "test": "node test/host.mjs && node test/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
